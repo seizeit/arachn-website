@@ -146,8 +146,9 @@ body {
 }
 
 .icon-img {
-    width: 80px;
+    width: auto;
     height: 80px;
+    object-fit: contain;
 }
 
 .contact-phone {
@@ -212,7 +213,7 @@ body {
     }
 
     .icon-img {
-        width: 60px;
+        width: auto;
         height: 60px;
     }
 
@@ -240,7 +241,7 @@ body {
     }
 
     .icon-img {
-        width: 50px;
+        width: auto;
         height: 50px;
     }
 }
