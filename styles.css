@@ -382,7 +382,7 @@ body {
 
   .splash-content {
     gap: var(--space-md);
-    padding-top: 60px;
+    padding-top: 80px;
   }
 
   .main-logo {
