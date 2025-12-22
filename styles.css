@@ -357,24 +357,62 @@ body {
 
 @media (max-width: 768px) {
   .splash {
-    padding: var(--space-xl) var(--space-md);
-    min-height: calc(100vh - 120px);
-    padding-bottom: 140px;
+    padding: var(--space-md) var(--space-md) 180px;
+    min-height: 100vh;
+    box-sizing: border-box;
   }
 
   .splash-content {
-    gap: var(--space-2xl);
+    gap: var(--space-md);
+    padding-top: 60px;
+  }
+
+  .main-logo {
+    max-height: 120px;
+    width: min(500px, 85vw);
+  }
+
+  .hero-title {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    margin-bottom: 0.125rem;
   }
 
   .hero-tagline {
-    flex-direction: column;
-    gap: var(--space-xs);
-    align-items: center;
+    flex-direction: row;
+    gap: var(--space-sm);
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: clamp(0.875rem, 3vw, 1.25rem);
+    margin-bottom: 0.125rem;
+  }
+
+  .hero-subtitle {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    margin-bottom: 0.125rem;
+  }
+
+  .hero-services {
+    font-size: clamp(0.6875rem, 1.8vw, 0.9375rem);
+    margin-bottom: 0.125rem;
+  }
+
+  .hero-est {
+    font-size: clamp(0.625rem, 1.5vw, 0.8125rem);
+  }
+
+  .content-section {
+    gap: 0.0625rem;
+  }
+
+  .footer {
+    padding: var(--space-sm) 0;
   }
 
   .footer-content {
     flex-direction: column;
     text-align: center;
+    gap: var(--space-sm);
   }
 
   .footer-contact {
@@ -387,15 +425,46 @@ body {
 }
 
 @media (max-width: 480px) {
+  .splash {
+    padding: var(--space-sm) var(--space-sm) 200px;
+  }
+
+  .splash-content {
+    gap: var(--space-sm);
+    padding-top: 50px;
+  }
+
   .main-logo {
-    width: 95vw;
+    width: 90vw;
+    max-height: 100px;
   }
 
   .hero-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.125rem;
   }
 
   .hero-tagline {
-    font-size: 1rem;
+    font-size: 0.875rem;
+    gap: var(--space-xs);
+    margin-bottom: 0.125rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.75rem;
+    margin-bottom: 0.0625rem;
+  }
+
+  .hero-services {
+    font-size: 0.6875rem;
+    margin-bottom: 0.0625rem;
+  }
+
+  .hero-est {
+    font-size: 0.625rem;
+  }
+
+  .content-section {
+    gap: 0.0625rem;
   }
 }
